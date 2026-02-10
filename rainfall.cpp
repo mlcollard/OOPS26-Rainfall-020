@@ -30,9 +30,9 @@ int main() {
     }
 
     // calculate the average rainfall
-    auto total = rainfall[0];
-    for (std::vector<double>::size_type i = 1; i < rainfall.size(); ++i) {
-        total += rainfall[i];
+    double total = 0.0;
+    for (auto rain : rainfall) {
+        total += rain;
     }
     auto average = total / rainfall.size();
 

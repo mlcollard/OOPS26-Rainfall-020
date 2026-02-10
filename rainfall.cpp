@@ -24,9 +24,9 @@ int main() {
 
     // calculate the heaviest rainfall
     auto heaviest = rainfall[0];
-    for (std::vector<double>::size_type i = 1; i < rainfall.size(); ++i) {
-        if (rainfall[i] > heaviest)
-            heaviest = rainfall[i];
+    for (auto rain : rainfall) {
+        if (rain > heaviest)
+            heaviest = rain;
     }
 
     // calculate the average rainfall
